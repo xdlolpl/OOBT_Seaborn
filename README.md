@@ -12,7 +12,7 @@ Projekt skupi się na testowaniu najnowszej stabilnej wersji biblioteki Seaborn.
 
 Pipeline CI/CD (GitHub Actions) zostanie skonfigurowany do automatycznej instalacji Seaborna i uruchamiania wszystkich przygotowanych testów.
 
-##Scenariusze
+## Scenariusze
 
 ## 1. Happy Path (Szczęśliwa ścieżka)
 
