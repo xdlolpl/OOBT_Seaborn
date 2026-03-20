@@ -1,0 +1,9 @@
+#Biblioteki wizualizacyjne i analityczne
+seaborn==0.13.2
+matplotlin==3.8.4
+pandas==2.2.1
+
+#Biblioteki do testowania
+pytest==8.1.1
+
+
