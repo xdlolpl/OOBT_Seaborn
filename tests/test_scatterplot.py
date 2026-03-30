@@ -20,5 +20,17 @@ def test_scatterplot_happy_path():
     assert ax.get_ylabel() == 'tip', "Nieprawidłowa etykieta osi Y"
     assert len(ax.collections) > 0, "Brak punktów na wykresie"
 
+    
     # 4. Sprzątanie
     plt.close()
+
+
+def test_scatterplot_invalid_column():
+    # 1. Przygotowanie danych (tylko jedna poprawna kolumna)
+    df = pd.DataFrame({
+        'poprawna_nazwa': [1, 2, 3]
+    })
+
+    # 2 & 3. Wykonanie i Weryfikacja (oczekujemy błędu KeyError)
+    with pytest.raises(ValueError):
+        sns.scatterplot(data=df, x='poprawna_nazwa', y='literowka_w_nazwie')
