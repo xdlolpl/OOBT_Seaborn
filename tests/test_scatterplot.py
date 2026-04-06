@@ -91,3 +91,48 @@ def test_boxplot_empty_dataframe():
     assert len(ax.lines) == 0, "Wykres dla pustych danych nie powinien mieć narysowanych linii"
     
     plt.close()
+
+
+def test_lineplot_categorical_data():
+    # 1. Przygotowanie danych z tekstem (Edge Case: dane kategoryczne)
+    df = pd.DataFrame({
+        'oś_x': [1, 2, 3],
+        'kolumna_tekstowa': ['jeden', 'dwa', 'trzy']
+    })
+    
+    # 2. Wykonanie - Seaborn nie wyrzuci błędu, tylko potraktuje tekst jako kategorie
+    ax = sns.lineplot(data=df, x='oś_x', y='kolumna_tekstowa')
+    
+    # 3. Weryfikacja - sprawdzamy, czy wykres poprawnie się wygenerował
+    assert ax is not None, "Wykres z danymi tekstowymi nie powstał"
+    assert len(ax.lines) > 0, "Linia nie została narysowana"
+    
+    plt.close()
+
+def test_histplot_with_nans():
+    # 1. Dane z dużą ilością braków (NaN) (Edge Case)
+    df = pd.DataFrame({
+        'kolumna_z_nanami': [1.0, 2.0, float('nan'), 4.0, float('nan')]
+    })
+    
+    # 2. Rysowanie histogramu
+    ax = sns.histplot(data=df, x='kolumna_z_nanami')
+    
+    # 3. Weryfikacja - biblioteka nie powinna wybuchnąć, a słupki (patches) powinny powstać
+    assert ax is not None, "Wykres nie powstał przez wartości NaN"
+    assert len(ax.patches) > 0, "Brak narysowanych słupków na histogramie"
+    
+    plt.close()
+
+def test_scatterplot_single_record():
+    # 1. Ramka danych z dokładnie jednym rekordem (Edge Case)
+    df = pd.DataFrame({'x': [5], 'y': [5]})
+    
+    # 2. Rysowanie wykresu
+    ax = sns.scatterplot(data=df, x='x', y='y')
+    
+    # 3. Weryfikacja - sprawdzamy, czy osie sobie poradziły i czy punkt istnieje
+    assert ax is not None, "Wykres dla jednego punktu nie powstał"
+    assert len(ax.collections) > 0, "Pojedynczy punkt nie został narysowany"
+    
+    plt.close()
