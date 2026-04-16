@@ -251,7 +251,7 @@ Praca została podzielona na etapy odpowiadające punktom kontrolnym.
 - Dodanie raportowania wyników testów
 
 **Odpowiedzialni:**
-- Ty (testy funkcjonalne)
+- Franciszek (testy funkcjonalne)
 - Maciej (testy wydajnościowe)
 - Hubert (pipeline)
 
