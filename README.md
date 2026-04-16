@@ -197,6 +197,111 @@ Hubert odpowiada za:
 - organizację pracy zespołu,
 - kontrolę jakości kodu.
 
+---
+
+## 📅 Harmonogram projektu
+
+Projekt realizowany jest w czasie około **2,5 miesiąca**, zgodnie z wymaganiami projektu OOB PyPI.  
+Praca została podzielona na etapy odpowiadające punktom kontrolnym.
+
+---
+
+## 🟢 Etap 1 – Organizacja projektu (Punkt kontrolny 1)
+📆 **Termin: do 17.04.2026**
+
+**Zakres:**
+- Utworzenie repozytorium GitHub
+- Przygotowanie README (cel + strategia testowa)
+- Określenie ról w zespole
+- Ustalenie kanałów komunikacji
+- Przygotowanie wstępnych scenariuszy testowych
+- Stworzenie harmonogramu projektu
+
+**Odpowiedzialni:**
+- Cały zespół
+- Hubert (repozytorium)
+
+---
+
+## 🔵 Etap 2 – Zarządzanie kodem (Punkt kontrolny 2)
+📆 **Termin: do 30.04.2026**
+
+**Zakres:**
+- Praca na branchach
+- Tworzenie Issues (podział zadań)
+- Praca z Pull Requestami
+- Code review
+- Konfiguracja Branch Protection
+- Wstępna konfiguracja CI/CD (GitHub Actions)
+
+**Odpowiedzialni:**
+- Hubert (CI/CD, repo)
+- Cały zespół (PR, Issues)
+
+---
+
+## 🟡 Etap 3 – Implementacja testów (Punkt kontrolny 3)
+📆 **Termin: do 15.05.2026**
+
+**Zakres:**
+- Implementacja testów funkcjonalnych (3–5)
+- Implementacja testów wydajnościowych (1–2)
+- Dopracowanie scenariuszy testów akceptacyjnych
+- Uruchamianie pipeline (manualne)
+- Dodanie raportowania wyników testów
+
+**Odpowiedzialni:**
+- Ty (testy funkcjonalne)
+- Maciej (testy wydajnościowe)
+- Hubert (pipeline)
+
+---
+
+## 🔴 Etap 4 – Finalizacja projektu (Release)
+📆 **Termin: do 29.05.2026**
+
+**Zakres:**
+- Uporządkowanie repozytorium
+- Finalna dokumentacja
+- Sprawdzenie działania pipeline
+- Code review całego projektu
+- Przygotowanie prezentacji
+- Opis problemów i wniosków
+
+**Odpowiedzialni:**
+- Cały zespół
+
+---
+
+## 📊 Podsumowanie etapów
+
+| Etap | Nazwa | Termin |
+|------|------|--------|
+| 1 | Organizacja projektu | 17.04.2026 |
+| 2 | Zarządzanie kodem | 30.04.2026 |
+| 3 | Testowanie | 15.05.2026 |
+| 4 | Finalizacja | 29.05.2026 |
+
+---
+
+## 🚀 Metodyka pracy
+
+Projekt realizowany zgodnie z podejściem iteracyjnym:
+
+- praca na osobnych branchach
+- wykorzystanie Pull Requestów
+- code review przed merge
+- zarządzanie zadaniami przez GitHub Issues
+- automatyczne testy (CI/CD)
+
+---
+
+## 📌 Uwagi
+
+- Pipeline uruchamiana manualnie zgodnie z wymaganiami projektu
+- Testy skupiają się na realnych scenariuszach użycia biblioteki Seaborn
+- Projekt kładzie nacisk na organizację pracy zespołowej oraz czytelność kodu i dokumentacji
+
 
 ## Kanały komunikacji
 *   **GitHub Issues:** Do śledzenia zadań i błędów.
