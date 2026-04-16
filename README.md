@@ -101,9 +101,9 @@ Pipeline CI/CD (GitHub Actions) zostanie skonfigurowany do automatycznej instala
 
 ## Podział ról w zespole
 
-*   **Hubert Miłuch:** Administrator repozytorium, konfiguracja pipeline'u GitHub Actions.
-*   **`https://github.com/dawadwadwadw`:** Projektowanie i implementacja testów funkcjonalnych.
-*   **`https://github.com/MaciejRadlak`:** Projektowanie i implementacja testów wydajnościowych, dokumentacja
+*   **Hubert Miłuch(`https://github.com/xdlolpl`):** Administrator repozytorium, konfiguracja pipeline'u GitHub Actions.
+*   **Franciszek Żurawicz(`https://github.com/dawadwadwadw`):** Projektowanie i implementacja testów funkcjonalnych.
+*   **Maciej Radlak(`https://github.com/MaciejRadlak`):** Projektowanie i implementacja testów wydajnościowych, dokumentacja
 
 ## 🛠️ Zadania administratora (DevOps) – Hubert Miłuch
 
