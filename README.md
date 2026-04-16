@@ -105,6 +105,99 @@ Pipeline CI/CD (GitHub Actions) zostanie skonfigurowany do automatycznej instala
 *   **`https://github.com/dawadwadwadw`:** Projektowanie i implementacja testów funkcjonalnych.
 *   **`https://github.com/MaciejRadlak`:** Projektowanie i implementacja testów wydajnościowych, dokumentacja
 
+## 🛠️ Zadania administratora (DevOps) – Hubert Miłuch
+
+Zgodnie z podziałem ról, Hubert pełni funkcję administratora repozytorium oraz odpowiada za DevOps. Jego zadaniem jest stworzenie i utrzymanie infrastruktury, która automatyzuje testowanie projektu.
+
+---
+
+### 1. 🤖 Pipeline CI/CD (GitHub Actions)
+
+**Opis zadania:**
+Utworzenie automatycznego pipeline'u testowego w GitHub Actions.
+
+**Kroki do wykonania:**
+- Utworzenie folderu:
+  ```
+  .github/workflows/
+  ```
+- Dodanie pliku konfiguracyjnego, np.:
+  ```
+  testy.yml
+  ```
+- Skonfigurowanie pipeline’u tak, aby:
+  - uruchamiał się przy każdym `push` i `pull request`
+  - instalował Python 3.11
+  - instalował zależności z `requirements.txt`
+  - uruchamiał testy poleceniem:
+    ```
+    pytest
+    ```
+
+**Cel:**
+Automatyczne testowanie kodu przy każdej zmianie w repozytorium.
+
+---
+
+### 2. 🔒 Ochrona gałęzi `main` (Branch Protection)
+
+**Opis zadania:**
+Zabezpieczenie głównej gałęzi repozytorium przed bezpośrednimi zmianami.
+
+**Kroki do wykonania:**
+- Przejście do:
+  ```
+  Settings → Branches → Add branch protection rule
+  ```
+- Ustawienie reguł:
+  - blokada bezpośredniego `push` do `main`
+  - wymaganie Pull Requestów
+  - wymaganie przejścia testów CI/CD przed merge
+
+**Cel:**
+Zapewnienie, że kod trafiający do `main` jest sprawdzony i zatwierdzony.
+
+---
+
+### 3. 📋 Zarządzanie zadaniami (Issues & Milestones)
+
+**Opis zadania:**
+Organizacja pracy zespołu przy użyciu narzędzi GitHuba.
+
+**Kroki do wykonania:**
+- Utworzenie kilku **Milestones** (np. etapy projektu)
+- Rozbicie projektu na mniejsze zadania (**Issues**)
+- Przypisanie zadań do członków zespołu
+
+**Cel:**
+Lepsza organizacja pracy i pokazanie podejścia Agile.
+
+---
+
+### 4. 👀 Code Review
+
+**Opis zadania:**
+Weryfikacja kodu przesyłanego przez członków zespołu.
+
+**Kroki do wykonania:**
+- Przeglądanie Pull Requestów
+- Dodawanie komentarzy i sugestii
+- Zatwierdzanie zmian (*Approve*)
+
+**Cel:**
+Utrzymanie wysokiej jakości kodu i spójności projektu.
+
+---
+
+### 📌 Podsumowanie
+
+Hubert odpowiada za:
+- automatyzację testów (CI/CD),
+- bezpieczeństwo repozytorium,
+- organizację pracy zespołu,
+- kontrolę jakości kodu.
+
+
 ## Kanały komunikacji
 *   **GitHub Issues:** Do śledzenia zadań i błędów.
 *   **Discord/Messenger:** Do codziennej, bieżącej komunikacji w zespole.
