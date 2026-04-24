@@ -12,6 +12,10 @@ Projekt skupi się na testowaniu najnowszej stabilnej wersji biblioteki Seaborn.
 
 Pipeline CI/CD (GitHub Actions) zostanie skonfigurowany do automatycznej instalacji Seaborna i uruchamiania wszystkich przygotowanych testów.
 
+## Instrukcja uruchomienia testów i raportów
+
+py -m pytest tests/ --html=reports/report.html --self-contained-html --cov=seaborn --cov-report=html:reports/coverage_html
+
 ## Scenariusze
 
 ## 1. Happy Path (Szczęśliwa ścieżka)
