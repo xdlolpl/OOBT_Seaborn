@@ -24,12 +24,12 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install pytest pytest-cov seaborn pandas matplotlib scipy
-          # Sprawdza obie wersje nazwy:
+          
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           if [ -f Requirements.txt ]; then pip install -r Requirements.txt; fi
 
       - name: Wykonanie wszystkich testów (Pytest)
-        # Uruchamiamy testy z folderu tests/, generując raport pokrycia kodu
+        
         run: |
           pytest tests/ \
             --doctest-modules \
@@ -38,8 +38,7 @@ jobs:
             --cov-report=xml
 
       - name: Archiwizacja wyeksportowanych plików
-        # Skoro masz test_file_export.py, pewnie generują się tam pliki.
-        # Ten krok zapisuje je, żebyś mógł je przejrzeć po zakończeniu pipeline'u.
+       
         if: always()
         uses: actions/upload-artifact@v4
         with:
